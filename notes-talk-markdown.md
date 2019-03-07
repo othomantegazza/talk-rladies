@@ -3,7 +3,7 @@ title: "Communicate your Results Elegantly with Rmarkdown"
 author: "Otho Mantegazza"
 output:
   word_document:
-    reference_docx: templates/kjhealy-mod-cv.docx
+    reference_docx: templates/kjhealy-ref-mod2.docx
 ---
 
 https://twitter.com/hadleywickham/status/1098581197213626368
