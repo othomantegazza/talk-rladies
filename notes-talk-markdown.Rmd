@@ -1,0 +1,27 @@
+---
+title: "Communicate your Results Elegantly with Rmarkdown"
+author: "Otho Mantegazza"
+output:
+  word_document:
+    reference_docx: templates/kjhealy-mod-cv.docx
+---
+
+https://twitter.com/hadleywickham/status/1098581197213626368
+
+In data science, **communication** is a big part of the job. We need to communicate our results to **our team**, to a **wider audience** and sometimes we need to communicate our results just to **ourselves** in 6 month time, just to remember what we where doing.
+
+If you work in R, you can communicate your results easily, because R is very well integrated with **Markdown**. This is a simplified markup language that works as a universal source to **.doc, .epub, .pdf** and especially **.html** files.
+
+R code can be combined with markdown text with the packages Knitr and Rmarkdown. These packages litterally knit together code and text: they style your text, run the R code and show the results in a single output. If you knit together  markdown you can produce elegant and reproducible reports.
+
+Since markdown is native to HTML, also its integration in R works best with html outputs (luckily today most of our communications happens online). For this, R has a wide ecosystem of packages that you can use to integrate your data analysis into HTML slides, HTML books or a blog., mostly centered around the html output, since today we mainly communicate on the web. For example, you can use to insert live R code into revealjs HTML presentations, into html books with bookdown and into websites with blogdown and ???
+
+This opens a realm of possibilities to present your data analysis with web native technologies and to feed your results directly to static plots, or interactive apps, for example with leaflet, for maps or with d3 for dataviz.
+
+I'll show you and give you ideas of how you can use those tools and what you can achieve with them. With examples of how I have been using those tools extensively while analyzing data in the biological and genomics field.
+
+## Technical
+
+If you have Rstudio installed onto your laptop you should be ready to participate to the active session.
+
+To check that you are able to compile Rmarkdown documents, 
