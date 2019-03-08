@@ -24,11 +24,11 @@ Open a new Rmarkdown file in Rstudio and knit it to be sure that you are able to
 
 Open a markdown file:
 
-<img src="img/open-file.png" alt="open markdown file" width="200px">
+<img src="img/open-file.png" alt="open markdown file" width="500px">
 
 Knit it:
 
-<img src="img/knit-file.png" alt="open markdown file" width="200px">
+<img src="img/knit-file.png" alt="open markdown file" width="500px">
 
 You might have to install these packages:
 
