@@ -1,6 +1,8 @@
+# Communicate your Results Elegantly with Rmarkdown
+
 *work in progress*
 
-# Abstract
+## Abstract
 
 In data science, we need to **communicate** our results and observations. We communicate our results to **our team**, to a **wider audience** or sometimes  just to **ourselves** (to remember what were doing in six months time).
 
@@ -14,24 +16,34 @@ This opens a realm of possibilities to present your data analysis with web nativ
 
 In this workshop I'll show of how you can use those tools and what you can achieve with them, with practical exercises and examples from my work in the field of biology and genomics.
 
-# Technical
+## Technical
 
 If you have Rstudio installed onto your laptop you should be ready to participate to the active session.
 
-Open a new Rmarkdown file in Rstudio and knit it to be sure that you are able to compile Rmarkdown documents:
+Open a new Rmarkdown file in Rstudio and knit it to be sure that you are able to compile Rmarkdown documents.
+
+Open a markdown file:
+
+![](img/open-file.png)
+
+Knit it:
+
+![](img/knit-file.png)
+
+You might have to install these packages:
 
 ```{r}
-install.packages("Rmarkdown", "knitr")
+install.packages("rmarkdown", "knitr")
 ```
 
-## Other packages
+### Other packages
 
-You might want to install these additional/optional packages to try them out.
+You can install these additional/optional packages if you want to try them out.
 
 ```{r}
 install.packages("revealjs") # make HTML slides
 install.packages("bookdown") # make HTML books
 install.packages("blogdown") # make websites / blogs
 install.packages("leaflet") # make maps on OpenStreetMaps
-install.packages("r2d3")
+install.packages("r2d3") # interface to d3
 ```
