@@ -1,6 +1,6 @@
 # Communicate your Results Elegantly with Rmarkdown
 
-Proposal: [R-Ladies Milan](https://www.meetup.com/R-Ladies-Milan/) workshop, May 9^th^ (?), 2019.
+Proposal: [R-Ladies Milan](https://www.meetup.com/R-Ladies-Milan/) workshop, May 9th (?), 2019.
 
 ## Abstract
 
