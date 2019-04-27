@@ -2,7 +2,7 @@
 
 [R-Ladies Milan](https://www.meetup.com/R-Ladies-Milan/) workshop, May 9th (?), 2019.
 
-:point_up::star:**Download this github repo on your laptop**, because in the practical session we will use the files in the `examples` subfolder.
+:point_up::star:**Download this github repo on your laptop**, because in the practical session we will work on the files in the `examples` subfolder.
 
 ## Abstract
 
