@@ -17,7 +17,7 @@ This folder contains the code for the [minimal bookdown example](https://bookdow
 
 ## slides folder
 
-A minimal examples of revealjs slides, styled with a custom CSS.
+A minimal examples of [revealjs slides](https://revealjs.com/#/), styled with a custom CSS.
 
 # More
 

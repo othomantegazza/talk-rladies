@@ -19,11 +19,15 @@ This is an R Markdown presentation. Markdown is a simple formatting syntax for a
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
 
+---
+
 ## Slide with Bullets
 
 - Bullet 1
 - Bullet 2
 - Bullet 3
+
+---
 
 ## Slide with R Code and Output
 
@@ -31,9 +35,40 @@ When you click the **Knit** button a document will be generated that includes bo
 summary(cars)
 ```
 
+---
+
 ## Slide with Plot
 
 ```{r, echo=FALSE}
 plot(cars)
+```
+
+# Vertical Slides
+
+## with more plots
+
+
+```{r, echo = FALSE}
+data(mtcars)
+
+with(mtcars, plot(mpg, disp))
+```
+
+# More vertical slides
+
+## With some code
+
+```{r}
+# a random dataset
+x <-  rnorm(100, 2, 2)
+y <- x + rnorm(100, .3, .3)
+
+a <- data.frame(x = x, y = y)
+```
+
+## And a plot
+
+```{r, echo = FALSE}
+plot(a$x, a$y)
 ```
 
