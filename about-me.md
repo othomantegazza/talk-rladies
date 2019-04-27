@@ -1,6 +1,5 @@
 # About me
 
-I've learned R programming during my PhD in biomolecular science at the University of Milan. My research was producing extensive datasets, and I wanted to be able to analyze them autonomusly. Since then, I never stopped.
+I've learned R during my PhD in biology at the University of Milan. At that time, I was producing extensive datasets in my research, and I wanted to be able to analyze them autonomously.
 
-R has been fundamental in my next two jobs, where I used it to explore and model genomic data. First at HHU/CEPLAS, where I used it to find targets to engineer photosynthesis in plants, later at IRD, where I used it to explore the domestication of Asian and African rice.
-
+Later, R has been fundamental in my two postdocs, where I used it on a daily basis to explore and model genomic data. First at HHU/CEPLAS, in Duesseldorf, where I used it to find targets to improve photosynthesis in crops, later at IRD, in Montpellier, where I used it to explore the genetics of Asian and African rice.

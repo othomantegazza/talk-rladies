@@ -1,20 +1,20 @@
 # Communicate your Results Elegantly with Rmarkdown
 
-Proposal: [R-Ladies Milan](https://www.meetup.com/R-Ladies-Milan/) workshop, May 9th (?), 2019.
+[R-Ladies Milan](https://www.meetup.com/R-Ladies-Milan/) workshop, May 9th (?), 2019.
+
+:point_up::star:**Download this github repo on your laptop**, because in the practical session we will use the files in the `examples` subfolder.
 
 ## Abstract
 
-In data science, we need to **communicate** our results and observations. We communicate our results to **our team**, to a **wider audience** or sometimes  just to **ourselves** (to remember what were doing in six months time).
+In data science, we need to **communicate** our results and observations. R has powerful tools for communication, such as [**Rmarkdown** and **knitr**](https://rmarkdown.rstudio.com/).
 
-If you work in R, you can communicate your results easily, because R is very well integrated with [**Markdown**](https://en.wikipedia.org/wiki/Markdown). This simplified markup language is a universal source to *.docx, .epub, .pdf* and, especially, *.html* files. Two packages, [**Rmarkdown**](https://bookdown.org/yihui/rmarkdown/) and [**knitr**](https://yihui.name/knitr/), literally knit together R code and markdown text.
+In this workshop we will learn how to use those packages to knit together text and R code and create beautiful and reproducible *reports*, *slides* and [*web pages*](https://bookdown.org/yihui/blogdown/).
 
-These packages run your R code, style your text and show the results in a single output. In this way you can produce [elegant and reproducible reports](https://rmarkdown.rstudio.com/).
+While working on plant science, I've been using these tools when I had to communicate to my team both results and methodology. 
 
-Since markdown is **native to HTML**, also its integration in R works best with html outputs (luckily today we communicate mostly online). R has a wide ecosystem of packages that you can use to integrate your data analysis into HTML products, such as [slides](https://revealjs.com/#/), [books](https://bookdown.org/) or a [blog](https://alison.rbind.io/post/up-and-running-with-blogdown/).
+In this workshop I'll bring both examples from my work and simple code snippets that you can try to run on your computer.
 
-This opens a realm of possibilities to present your data analysis with web native technologies, to show your code and feed your results directly to static plots, but also to interactive apps, for example with [leaflet](https://rstudio.github.io/leaflet/) for maps or [d3](https://rstudio.github.io/r2d3/) for dataviz.
-
-In this workshop I'll show of how you can use those tools and what you can achieve with them, with practical exercises and examples from my work in the field of biology and genomics.
+Level: beginner
 
 ## Technical
 
@@ -48,3 +48,9 @@ install.packages("blogdown") # make websites / blogs
 install.packages("leaflet") # make maps on OpenStreetMaps
 install.packages("r2d3") # interface to d3
 ```
+
+## About me
+
+I've learned R during my PhD in biology at the University of Milan. At that time, I was producing extensive datasets in my research, and I wanted to be able to analyze them autonomously.
+
+Later, R has been fundamental in my two postdocs, where I used it on a daily basis to explore and model genomic data. First at HHU/CEPLAS, in Duesseldorf, where I used it to find targets to improve photosynthesis in crops, later at IRD, in Montpellier, where I used it to explore the genetics of Asian and African rice.

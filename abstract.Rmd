@@ -6,9 +6,9 @@ output:
     reference_docx: templates/kjhealy-ref-mod2.docx
 ---
 
-Proposal: [R-Ladies Milan](https://www.meetup.com/R-Ladies-Milan/) workshop, May 9^th^ (?), 2019.
+[R-Ladies Milan](https://www.meetup.com/R-Ladies-Milan/) workshop, May 9^th^, 2019.
 
-# Abstract
+## Abstract
 
 In data science, we need to **communicate** our results and observations. We communicate our results to **our team**, to a **wider audience** or sometimes  just to **ourselves** (to remember what were doing in six months time).
 
@@ -21,6 +21,7 @@ Since markdown is **native to HTML**, also its integration in R works best with 
 This opens a realm of possibilities to present your data analysis with web native technologies, to show your code and feed your results directly to static plots, but also to interactive apps, for example with [leaflet](https://rstudio.github.io/leaflet/) for maps or [d3](https://rstudio.github.io/r2d3/) for dataviz.
 
 In this workshop I'll show of how you can use those tools and what you can achieve with them, with practical exercises and examples from my work in the field of biology and genomics.
+
 
 # Technical
 

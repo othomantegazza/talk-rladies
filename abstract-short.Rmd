@@ -11,9 +11,9 @@ Proposal: [R-Ladies Milan](https://www.meetup.com/R-Ladies-Milan/) workshop, May
 
 # Abstract
 
-In data science, we need to **communicate** our results and observations. R has powerful tools for communication, such as **Rmarkdown** and **knitr**.
+In data science, we need to **communicate** our results and observations. R has powerful tools for communication, such as [**Rmarkdown** and **knitr**](https://rmarkdown.rstudio.com/).
 
-In this workshop we will learn how to use those packages to knit together text and R code and create beautiful and reproducible *reports*, *slides* and *web pages*.
+In this workshop we will learn how to use those packages to knit together text and R code and create beautiful and reproducible *reports*, *slides* and [*web pages*](https://bookdown.org/yihui/blogdown/).
 
 While working on plant science, I've been using these tools when I had to communicate to my team both results and methodology. 
 
