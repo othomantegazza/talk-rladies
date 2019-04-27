@@ -1,0 +1,34 @@
+---
+title: "Communicate your Results with Rmarkdown"
+author: "Otho Mantegazza"
+output:
+  word_document:
+    reference_docx: templates/kjhealy-ref-mod2.docx
+---
+
+
+Proposal: [R-Ladies Milan](https://www.meetup.com/R-Ladies-Milan/) workshop, May 9^th^ (?), 2019.
+
+# Abstract
+
+In data science, we need to **communicate** our results and observations. R has powerful tools for communication, such as **Rmarkdown** and **knitr**.
+
+In this workshop we will learn how to use those packages to knit together text and R code and create beautiful and reproducible *reports*, *slides* and *web pages*.
+
+While working on plant science, I've been using these tools when I had to communicate to my team both results and methodology. 
+
+In this workshop I'll bring both examples from my work and simple code snippets that you can try to run on your computer.
+
+Level: beginner
+
+Be sure that you have installed the packages Rmarkdown and knitr.
+
+```{r, eval = FALSE}
+install.packages(c("rmarkdown", "knitr"))
+```
+
+Additional packages that you might want to try:
+
+```{r, eval = FALSE}
+install.packages(c("revealjs","bookdown","blogdown","leaflet","r2d3"))
+```
