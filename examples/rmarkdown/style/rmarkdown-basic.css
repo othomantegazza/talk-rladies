@@ -1,0 +1,17 @@
+h1, h2, h3 {
+  color: #263A89;
+}
+
+pre {
+  background-color: #F0F0CB;
+}
+
+pre:not([class]) {
+  background-color: #D9F6FF;  
+}
+
+.main-container {
+    max-width: 700px !important;
+    margin-left: auto;
+    margin-right: auto;
+}

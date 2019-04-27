@@ -3,3 +3,8 @@ templates/*
 *.pdf
 .Rproj.user
 *.docx#
+
+# examples
+examples/*/*.html
+examples/*/*.docx
+examples/*/*_files/*
