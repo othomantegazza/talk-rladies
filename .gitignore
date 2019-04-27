@@ -5,6 +5,8 @@ templates/*
 *.docx#
 
 # examples
+
+examples/*.html
 examples/*/*.html
 examples/*/*.docx
 examples/*/*_files/*

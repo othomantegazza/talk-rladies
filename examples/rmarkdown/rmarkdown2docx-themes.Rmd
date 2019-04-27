@@ -3,8 +3,8 @@ title: "Some Markdown File"
 author: "Otho"
 date: "4/26/2019"
 output:
-  html_document:
-    css: style/rmarkdown-basic.css
+  word_document:
+    reference_docx: style/kjhealy-ref-mod2.docx
 ---
 
 ```{r setup, include=FALSE}
@@ -13,6 +13,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 **This example is modified from the original examples provided with Rstudio**
+
+## Theme 
+
+To style an rmarkdown report in `.docx`, you have to [provide a reference `.docx` file](https://rmarkdown.rstudio.com/articles_docx.html).
+
+This one is modified by [Kieran Healy's template](https://github.com/kjhealy/pandoc-templates/tree/master/templates).
 
 ## R Markdown
 

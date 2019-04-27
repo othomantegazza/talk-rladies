@@ -12,8 +12,17 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
 **This example is modified from the original examples provided with Rstudio**
+
+## Code highlight options
+
+Default, tango, pygments, kate, monochrome, espresso, zenburn, haddock, and textmate.
+
+## Bootstrap themes
+
+Default, cerulean, journal, flatly, darkly, readable, spacelab, united, cosmo, lumen, paper, sandstone, simplex, and yeti.
+
+From the [bootswatch library](https://bootswatch.com/3/).
 
 ## R Markdown
 
