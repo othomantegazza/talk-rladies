@@ -13,7 +13,11 @@ Here you will find examples on how to make and how to style a basic Rmarkdown re
 
 ## bookdown folder
 
-This folder contains the code for the [minimal bookdown example](https://bookdown.org/yihui/bookdown-demo/), provided by Rstudio and Yihui Xie. 
+This folder contains the code for the [minimal bookdown example](https://bookdown.org/yihui/bookdown-demo/), provided by Rstudio and Yihui Xie.
+
+## slides folder
+
+A minimal examples of revealjs slides, styled with a custom CSS.
 
 # More
 
