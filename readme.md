@@ -1,6 +1,6 @@
 # Communicate your Results Elegantly with Rmarkdown
 
-[R-Ladies Milan](https://www.meetup.com/R-Ladies-Milan/) workshop, May 9th (?), 2019.
+[R-Ladies Milan](https://www.meetup.com/R-Ladies-Milan/) workshop, May 9th, 2019. [Register here](https://www.meetup.com/rladies-milan/events/260831732/)
 
 :point_up::star:**Download this github repo on your laptop**, because in the practical session we will work on the files in the `examples` subfolder.
 
