@@ -1,6 +1,98 @@
 ---
-title: "Untitled"
-output: revealjs::revealjs_presentation
+title: "**Communicate your results with Rmarkdown**"
+author: "Otho Mantegazza"
+date: "`r Sys.Date()`"
+output: 
+  revealjs::revealjs_presentation:
+    self_contained: true
+    transition: slide
+    theme: sky
+    center: true
+    highlight: espresso
+    css: style/custom-sky.css
+    slide_level: 2
+---
+
+## Tools for communcation
+
+Rmarkdown Shiny
+
+---
+
+## Why
+
+- Me biologist
+- welcoming and empowering community
+- fits with R-ladies
+
+Withhout knowing HTML allowed me to communicate my R results in HTML reports,
++ puts you in control, so by using it you learn and improve HTML
+
+---
+
+## How
+
+One plain text file 
+
+- code, do the analysis
+- text,  explain and communicate your analysis
+
+Run this file: results from code (tables, figures, numbers), style text (so that it reads nicely)
+
+Basic: literate programming
+
+---
+
+## Text: Markdown 
+
+![](https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg)
+
+https://daringfireball.net/projects/markdown/syntax
+https://bookdown.org/yihui/rmarkdown/markdown-document.html
+
+## Markdown
+
+```{markdown}
+# This is a header
+
+This is a paragraph R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+## This is a levele 2 header
+
+- this is a dotted list
+- item 2
+- item 3
+
+This is another paragraph R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+```
+
+## Markdown
+
+```{markdown}
+### This is a level 3 header
+
+1. This is an ordered list
+2. item 2
+1. item 3, dotted numbers are fixed automatically
+
+### You can also add links and images/videos
+
+[This is a link](www.example.com)
+
+![](path/to/image)
+```
+---
+
+## Text and code
+
+https://github.com/othomantegazza/otho-website/blob/master/content/post/2019-02-02-butter-consumption.Rmd
+
+https://otho.netlify.com/post/2019-02-02-butter-consumption/
+
 ---
 
 https://twitter.com/hadleywickham/status/1098581197213626368

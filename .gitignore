@@ -10,3 +10,6 @@ examples/*.html
 examples/*/*.html
 examples/*/*.docx
 examples/*/*_files/*
+
+# slides
+slides/slides.html

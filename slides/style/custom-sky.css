@@ -1,0 +1,61 @@
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  color: #FFF;
+}
+
+.reveal p,
+.reveal li {
+  color: #E4F0F4;
+  /*color: #4E515B;*/
+  line-height: 1.6;
+}
+
+
+.reveal a,
+.reveal pre {
+  color: #E4F0F4;
+}
+
+.reveal a:not(.sourceLine) {
+  color: #E4F0F4;
+  border-bottom:  0.12em solid #98F0D8;
+}
+
+.reveal a:hover {
+  color: #FFF;
+  background: #98F0D8;
+}
+
+.reveal .controls .navigate-left.enabled {
+ border-right-color: #E4F0F4;
+ opacity: 1;
+} 
+
+.reveal .controls .navigate-right.enabled {
+ border-left-color: #E4F0F4;
+ opacity: 1;
+} 
+
+.reveal .controls .navigate-down.enabled {
+ border-top-color: #E4F0F4;
+ opacity: 1;
+} 
+
+.reveal .controls .navigate-up.enabled {
+ border-bottom-color: #E4F0F4;
+ opacity: 1;
+} 
+
+body,
+.sourceCode {
+	background: #4C63C3 !important;
+}
+
+code.sourceCode {
+  background: #2a211c !important;
+}
+
+.reveal section img {
+  border: 0;
+}
