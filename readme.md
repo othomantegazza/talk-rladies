@@ -16,9 +16,11 @@ In this workshop I'll bring both examples from my work and simple code snippets 
 
 Level: beginner
 
-## Technical
+## Practical session
 
-If you have Rstudio installed onto your laptop you should be ready to participate to the active session.
+**Download this github repo on your laptop**, because we will use the scripts in the `examples` folder.
+
+If you have Rstudio installed onto your laptop you should be ready to knit rmarkdown files to HTML and docx.
 
 Open a new Rmarkdown file in Rstudio and knit it to be sure that you are able to compile Rmarkdown documents.
 
