@@ -8,7 +8,8 @@ output:
     transition: slide
     theme: sky
     center: true
-    highlight: espresso
+    # highlight: espresso
+    highlight: zenburn
     css: style/custom-sky.css
     slide_level: 2
 ---
@@ -64,14 +65,14 @@ Plus we need a header
 
 a header
 
-```{yaml}
+```{yaml, eval = FALSE}
 title: "An rmarkdown report"
 author: "Otho Mantegazza"
 ```
 
 some text
 
-```{markdown}
+```{markdown, eval = FALSE}
 # An example of rmarkdown
 
 Below you'll find a very basic plot
@@ -123,7 +124,7 @@ Basic: literate programming
 
 ## Markdown
 
-```{markdown}
+```{markdown, eval = FALSE}
 # This is a header
 
 This is a paragraph. In my younger and more vulnerable years my father gave me
@@ -145,7 +146,7 @@ decencies is parceled out unequally at birth.
 
 ## Markdown
 
-```{markdown}
+```{markdown, eval = FALSE}
 ### This is a level 3 header
 
 1. This is an ordered list
@@ -162,9 +163,9 @@ decencies is parceled out unequally at birth.
 
 ## Markdown - Resources
 
-- [First version at Daring Fireball](https://daringfireball.net/projects/markdown/syntax)
-- [Basic Markdown at Rstudio](https://rmarkdown.rstudio.com/authoring_basics.html)
-- [Pandoc - A universal document converter](https://pandoc.org/)
+- [First version](https://daringfireball.net/projects/markdown/syntax) at Daring Fireball
+- [Basic Markdown](https://rmarkdown.rstudio.com/authoring_basics.html) at Rstudio
+- [Pandoc](https://pandoc.org/) - A universal document converter
 
 <!--
 While talking I'll try to provide ideas,
@@ -173,50 +174,88 @@ that explains technical sides in detail
 slides are available online
 -->
 
----
-
 # Let's Try One!
 
-<!--
-Open one Rmarkdown file and show header
-R code and text.
-- markdown text, highlight with *, paragraph with empty line
-- code is knitted in text with ```
-- many options for code, also inline
-- header, metainformation
+![](/home/otho/Desktop/rladies/slides/img/open-file.png)
 
+## 
+
+*these are my notes for the practical session*
+
+In the rmarkdown file: 
+
+- [YAML](https://yaml.org/) header with metadata.
+- Markdown text: highlights with *, paragraph with empty line
+- code is knitted in text with ````{language}`
+- many options for code, also inline
+
+##
+
+*these are my notes for the practical session*
 
 Output: 
-- docx: with template
-- html - best
-  - style with css, show live?
+
+- docx
+  - with template
+- html
+  - style with css?
 - parametrized?
 
-Show example report transcriptome PCA
-TidyTuesday on my website
--->
+Example: [An article from my blog](https://otho.netlify.com/post/rice-geographic-italy/),
+with interactive [choropleth maps](https://en.wikipedia.org/wiki/Choropleth_map) in a [leaflet app](https://rstudio.github.io/leaflet/)
 
----
 
-# More, slides
+
+# Slides
 
 <!--
 Slides with R codes
 Example, these slides
 -->
 
----
+## 
 
-# More Books
+For example, these slides, you can find the source code [here]()
 
-<!--
-compile minimal book example
-show socviz example
--->
+</section>
+<section class="slide level2">
 
----
+R code is evaluated:
 
-# More websites and Dashboards
+```{r}
+summary(1:10)
+```
+
+## 
+
+```{r, message = FALSE}
+# From https://rstudio.github.io/leaflet/
+library(leaflet)
+library(tidyverse)
+
+
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng=174.768, lat=-36.852, popup="The birthplace of R")
+```  
+
+##
+  
+```{r, echo = FALSE, out.width=1000}
+m  # Print the map
+```
+
+#
+
+## More Books, Blogs, dashboards?
+
+
+<a href="https://bookdown.org/" class="imagelink">
+<img src="img/bookdown.svg" alt="hex-rmarkdown" height="200" width="200"></a>
+<a href="https://alison.rbind.io/post/up-and-running-with-blogdown/" class="imagelink">
+<img src="img/blogdown.svg" alt="hex-rmarkdown" height="200" width="200"></a>
+
+
 
 <!--
 Blogdown

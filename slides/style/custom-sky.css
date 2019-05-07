@@ -17,6 +17,7 @@
   color: #E4F0F4;
 }
 
+/* Links and image links */
 .reveal a:not(.sourceLine):not(.imagelink) {
   color: #E4F0F4;
   border-bottom:  0.12em solid #98F0D8;
@@ -27,6 +28,8 @@
   background: #98F0D8;
 }
 
+
+/* Controller arrows */
 .reveal .controls .navigate-left.enabled {
  border-right-color: #E4F0F4;
  opacity: 1;
@@ -47,15 +50,22 @@
  opacity: 1;
 } 
 
+
+/* Slides background */
 body,
 .sourceCode {
 	background: #4C63C3 !important;
 }
 
+
+/* Code chunk background */
 code.sourceCode {
-  background: #2a211c !important;
+  /*background: #2a211c !important;*/
+  background: #100089 !important;
 }
 
+
+/* Images */
 .reveal section img {
   border: 0;
   background: 0;
