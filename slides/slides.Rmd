@@ -15,22 +15,98 @@ output:
 
 ## Tools for communcation
 
-Rmarkdown Shiny
+<!--
+R has great tools for communication, we will focus on rmarkdown and knitr
+and many packages that are built upon them
+Shiny for interactiva apps
+-->
+
+Rmarkdown, knitr, Shiny.
+
+<a href="https://rmarkdown.rstudio.com/" class="imagelink">
+<img src="img/rmarkdown.svg" alt="hex-rmarkdown" height="200" width="200"></a>
+<a href="https://yihui.name/knitr/" class="imagelink">
+<img src="img/knitr.svg" alt="hex-rmarkdown" height="200" width="200"></a>
+<a href="https://shiny.rstudio.com/" class="imagelink">
+<img src="img/shiny.svg" alt="hex-rmarkdown" height="200" width="200"></a>
 
 ---
 
-## Why
+## Why?
 
-- Me biologist
-- welcoming and empowering community
-- fits with R-ladies
+<!--
+looking forward to do R-ladies talk
+Tools of R that made the difference for me: rmarkdown
+Afterwards, I was glad to see that it is considered one of 
+the most developed aspects of R compared to python
+-->
 
-Withhout knowing HTML allowed me to communicate my R results in HTML reports,
-+ puts you in control, so by using it you learn and improve HTML
+<div style="float: left; width: 48%; padding: 3px;">
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I’d second db connections and add RMarkdown. The tooling for generating reports with integrated plots is not as good in python.</p>&mdash; Hadley Wickham (@hadleywickham) <a href="https://twitter.com/hadleywickham/status/1098581197213626368?ref_src=twsrc%5Etfw">February 21, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div style="float: right; width: 48%;">
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Totally agree - I&#39;m currently in a Python-heavy environment, and I think if anything tips the scales to including R in our workflow, it&#39;ll be RMarkdown.</p>&mdash; Jennifer Thompson (@jent103) <a href="https://twitter.com/jent103/status/1098627460147613697?ref_src=twsrc%5Etfw">February 21, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+</div>
+
+<!--
+A bit more, 
+Not programmer, inclusive and empowering culture
+-->
+
 
 ---
 
-## How
+<!--
+A report boils down to some text, explain
+some code: produce results
+Plus we need a header
+-->
+
+a header
+
+```{yaml}
+title: "An rmarkdown report"
+author: "Otho Mantegazza"
+```
+
+some text
+
+```{markdown}
+# An example of rmarkdown
+
+Below you'll find a very basic plot
+```
+
+some code
+
+```{r, eval = FALSE}
+plot(mtcars$mpg, mtcars$hp)
+```
+  
+---
+
+## How?
+
+<div style="float: left; width: 48%; padding: 3px;">
+
+### Code
+
+<img src="img/R_logo.svg" alt="hex-rmarkdown" height="200" width="200">
+
+Generate your results, plots.
+
+</div>
+<div style="float: right; width: 48%; padding: 3px;">
+
+### text
+
+<img src="img/Markdown-mark.svg" alt="hex-rmarkdown" height="200" width="200">
+
+Explain our results and the reasoning behind them.
+
+</div>
+
+<!--
 
 One plain text file 
 
@@ -41,33 +117,30 @@ Run this file: results from code (tables, figures, numbers), style text (so that
 
 Basic: literate programming
 
+-->
+
 ---
-
-## Text: Markdown 
-
-![](https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg)
-
-https://daringfireball.net/projects/markdown/syntax
-https://bookdown.org/yihui/rmarkdown/markdown-document.html
 
 ## Markdown
 
 ```{markdown}
 # This is a header
 
-This is a paragraph R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
+This is a paragraph. In my younger and more vulnerable years my father gave me
+some advice that I've been turning over in my mind ever since.
+"Whenever you feel like criticizing any one," he told me, "just remember that all
+the people in this world haven’t had the advantages that you’ve had."
 
-## This is a levele 2 header
+## This is a level 2 header
 
 - this is a dotted list
 - item 2
 - item 3
 
-This is another paragraph R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
+This is another paragraph. Reserving judgments is a matter of infinite hope.
+I am still a little afraid of missing something if I forget that, as my father
+snobbishly suggested, and I snobbishly repeat, a sense of the fundamental
+decencies is parceled out unequally at birth. 
 ```
 
 ## Markdown
@@ -81,18 +154,74 @@ Type 'contributors()' for more information and
 
 ### You can also add links and images/videos
 
-[This is a link](www.example.com)
+[This is a link](https://en.wikiquote.org/wiki/The_Great_Gatsby)
 
 ![](path/to/image)
 ```
 ---
 
-## Text and code
+## Markdown - Resources
 
-https://github.com/othomantegazza/otho-website/blob/master/content/post/2019-02-02-butter-consumption.Rmd
+- [First version at Daring Fireball](https://daringfireball.net/projects/markdown/syntax)
+- [Basic Markdown at Rstudio](https://rmarkdown.rstudio.com/authoring_basics.html)
+- [Pandoc - A universal document converter](https://pandoc.org/)
 
-https://otho.netlify.com/post/2019-02-02-butter-consumption/
+<!--
+While talking I'll try to provide ideas,
+In this slides you'll find many resources
+that explains technical sides in detail
+slides are available online
+-->
 
 ---
 
-https://twitter.com/hadleywickham/status/1098581197213626368
+# Let's Try One!
+
+<!--
+Open one Rmarkdown file and show header
+R code and text.
+- markdown text, highlight with *, paragraph with empty line
+- code is knitted in text with ```
+- many options for code, also inline
+- header, metainformation
+
+
+Output: 
+- docx: with template
+- html - best
+  - style with css, show live?
+- parametrized?
+
+Show example report transcriptome PCA
+TidyTuesday on my website
+-->
+
+---
+
+# More, slides
+
+<!--
+Slides with R codes
+Example, these slides
+-->
+
+---
+
+# More Books
+
+<!--
+compile minimal book example
+show socviz example
+-->
+
+---
+
+# More websites and Dashboards
+
+<!--
+Blogdown
+My website
+Encouraging empowering 
+First with template, then from scratch
+-->
+

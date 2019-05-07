@@ -17,12 +17,12 @@
   color: #E4F0F4;
 }
 
-.reveal a:not(.sourceLine) {
+.reveal a:not(.sourceLine):not(.imagelink) {
   color: #E4F0F4;
   border-bottom:  0.12em solid #98F0D8;
 }
 
-.reveal a:hover {
+.reveal a:hover:not(.imagelink) {
   color: #FFF;
   background: #98F0D8;
 }
@@ -58,4 +58,6 @@ code.sourceCode {
 
 .reveal section img {
   border: 0;
+  background: 0;
+  box-shadow: none;
 }
