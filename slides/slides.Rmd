@@ -53,7 +53,7 @@ the most developed aspects of R compared to python
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I’d second db connections and add RMarkdown. The tooling for generating reports with integrated plots is not as good in python.</p>&mdash; Hadley Wickham (@hadleywickham) <a href="https://twitter.com/hadleywickham/status/1098581197213626368?ref_src=twsrc%5Etfw">February 21, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 <div style="float: right; width: 48%;">
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Totally agree - I&#39;m currently in a Python-heavy environment, and I think if anything tips the scales to including R in our workflow, it&#39;ll be RMarkdown.</p>&mdash; Jennifer Thompson (@jent103) <a href="https://twitter.com/jent103/status/1098627460147613697?ref_src=twsrc%5Etfw">February 21, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Totally agree - I&#39;m currently in a Python-heavy environment, and I think if anything tips the scales to including R in our workflow, it&#39;ll be RMarkdown.</p>&mdash; Jennifer Thompson (@jent103) <a href="https://twitter.com/jent103/status/1098627460147613697?ref_src=twsrc%5Etfw">February 21, 2019</a></blockquote>
 </div>
 
 <!--
@@ -69,14 +69,14 @@ some code: produce results
 Plus we need a header
 -->
 
-a header *(metadata)*
+🙆 a header *(metadata)*
 
 ```{yaml, eval = FALSE}
 title: "An rmarkdown report"
 author: "Otho Mantegazza"
 ```
 
-some text *(explain results)*
+`r emo::ji("memo")` some text *(explain results)*
 
 ```{markdown, eval = FALSE}
 # An example of rmarkdown
@@ -84,7 +84,7 @@ some text *(explain results)*
 Below you'll find a very basic plot
 ```
 
-some code *(produce results)*
+`r emo::ji("computer")` some code *(produce results)*
 
 ```{r, eval = FALSE}
 plot(mtcars$mpg, mtcars$hp)
@@ -297,8 +297,15 @@ m  # Print the map
 <a href="https://rstudio.github.io/r2d3/" class="imagelink">
 <img src="img/r2d3-hex.png" alt="hex-r2d3" height="300" width="300"></a>
 
+## Full process
+
+![](img/rmarkdownflow.png)
+
+source: Rstudio
+
 ## Resources
 
+- `r emo::ji("writing_hand")` [Yihui Xie's Blog](https://yihui.name/en/), developer of most of these tools,
 - `r emo::ji("computer")` The official [website](https://rmarkdown.rstudio.com/), and [Github repo](https://github.com/rstudio/rmarkdown)
 - `r emo::ji("bookmark")` [The Rmarkdown book](https://bookdown.org/yihui/rmarkdown/),
 - `r emo::ji("books")` [The Bookdown repository](https://bookdown.org/), with lots of books on R,
@@ -310,7 +317,7 @@ m  # Print the map
 
 <div style="margin-left: auto; margin-right: auto; max-width: 50%;">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The <a href="https://twitter.com/R4DScommunity?ref_src=twsrc%5Etfw">@R4DScommunity</a> welcomes you to week 19 of <a href="https://twitter.com/hashtag/TidyTuesday?src=hash&amp;ref_src=twsrc%5Etfw">#TidyTuesday</a>! We&#39;re exploring Global Student-Teacher ratios!!<br><br>📁 <a href="https://t.co/sElb4fcv3u">https://t.co/sElb4fcv3u</a><br>🗞 <a href="https://t.co/nJqEUDyaNm">https://t.co/nJqEUDyaNm</a><a href="https://twitter.com/hashtag/r4ds?src=hash&amp;ref_src=twsrc%5Etfw">#r4ds</a> <a href="https://twitter.com/hashtag/tidyverse?src=hash&amp;ref_src=twsrc%5Etfw">#tidyverse</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/dataviz?src=hash&amp;ref_src=twsrc%5Etfw">#dataviz</a> <a href="https://t.co/O5PZ7kTDiC">pic.twitter.com/O5PZ7kTDiC</a></p>&mdash; Thomas Mock 👨🏼
-💻 (@thomas_mock) <a href="https://twitter.com/thomas_mock/status/1125413017858998272?ref_src=twsrc%5Etfw">May 6, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+💻 (@thomas_mock) <a href="https://twitter.com/thomas_mock/status/1125413017858998272?ref_src=twsrc%5Etfw">May 6, 2019</a></blockquote>
 </div>
 
 ---
