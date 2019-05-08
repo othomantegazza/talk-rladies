@@ -230,9 +230,9 @@ simple concept that comes in many flavours with many details
 In the rmarkdown file: 
 
 - [YAML](https://yaml.org/) header with metadata.
-- Markdown text: check the styling options
 - code is knitted in text with ````{language}`
-- many options for code, also inline
+- macheck the [options for code output](https://bookdown.org/yihui/rmarkdown/r-code.html), for figures, tables etc.,
+- Also inline code.
 
 `r emo::ji("sunflower")``r emo::ji("sun_with_face")` Check the [`examples/rmarkdown`](https://github.com/othomantegazza/talk-rladies/tree/master/examples/rmarkdown) folder to see how to style the output `r emo::ji("sun_with_face")``r emo::ji("sunflower")`
 
@@ -291,26 +291,31 @@ m  # Print the map
 
 
 <a href="https://bookdown.org/" class="imagelink">
-<img src="img/bookdown.svg" alt="hex-rmarkdown" height="300" width="300"></a>
+<img src="img/bookdown.svg" alt="hex-bookdown" height="300" width="300"></a>
 <a href="https://alison.rbind.io/post/up-and-running-with-blogdown/" class="imagelink">
-<img src="img/blogdown.svg" alt="hex-rmarkdown" height="300" width="300"></a>
+<img src="img/blogdown.svg" alt="hex-blogdown" height="300" width="300"></a>
+<a href="https://rstudio.github.io/r2d3/" class="imagelink">
+<img src="img/r2d3-hex.png" alt="hex-r2d3" height="300" width="300"></a>
 
 ## Resources
 
+- `r emo::ji("computer")` The official [website](https://rmarkdown.rstudio.com/), and [Github repo](https://github.com/rstudio/rmarkdown)
 - `r emo::ji("bookmark")` [The Rmarkdown book](https://bookdown.org/yihui/rmarkdown/),
 - `r emo::ji("books")` [The Bookdown repository](https://bookdown.org/), with lots of books on R,
+- `r emo::ji("chart_with_upwards_trend")` [D3 graphics](https://rstudio.github.io/r2d3/),
 - `r emo::ji("woman_scientist")` The next level? [Parametrized Rmarkdown](https://github.com/jenniferthompson/ParamRmdExample) and [Rmarkdown driven development](https://emilyriederer.netlify.com/post/rmarkdown-driven-development/),
-
-about me:
-
 - `r emo::ji("man_technologist")` [My website](https://otho.netlify.com/), done with blogdown.
 
-## Next, Tidytuesday?
+## Interested in Tidytuesday?
 
+<div style="margin-left: auto; margin-right: auto; max-width: 50%;">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The <a href="https://twitter.com/R4DScommunity?ref_src=twsrc%5Etfw">@R4DScommunity</a> welcomes you to week 19 of <a href="https://twitter.com/hashtag/TidyTuesday?src=hash&amp;ref_src=twsrc%5Etfw">#TidyTuesday</a>! We&#39;re exploring Global Student-Teacher ratios!!<br><br>📁 <a href="https://t.co/sElb4fcv3u">https://t.co/sElb4fcv3u</a><br>🗞 <a href="https://t.co/nJqEUDyaNm">https://t.co/nJqEUDyaNm</a><a href="https://twitter.com/hashtag/r4ds?src=hash&amp;ref_src=twsrc%5Etfw">#r4ds</a> <a href="https://twitter.com/hashtag/tidyverse?src=hash&amp;ref_src=twsrc%5Etfw">#tidyverse</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/dataviz?src=hash&amp;ref_src=twsrc%5Etfw">#dataviz</a> <a href="https://t.co/O5PZ7kTDiC">pic.twitter.com/O5PZ7kTDiC</a></p>&mdash; Thomas Mock 👨🏼
 💻 (@thomas_mock) <a href="https://twitter.com/thomas_mock/status/1125413017858998272?ref_src=twsrc%5Etfw">May 6, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+</div>
 
+---
 
+<h1>Thank you!</h1>
 
 <!--
 Blogdown
