@@ -14,6 +14,13 @@ output:
     slide_level: 2
 ---
 
+```{r setup, echo = FALSE, message = FALSE}
+library(tidyverse)
+library(leaflet)
+library(emo)
+```
+
+
 ## Tools for communcation
 
 <!--
@@ -25,11 +32,11 @@ Shiny for interactiva apps
 Rmarkdown, knitr, Shiny.
 
 <a href="https://rmarkdown.rstudio.com/" class="imagelink">
-<img src="img/rmarkdown.svg" alt="hex-rmarkdown" height="200" width="200"></a>
+<img src="img/rmarkdown.svg" alt="hex-rmarkdown" height="300" width="300"></a>
 <a href="https://yihui.name/knitr/" class="imagelink">
-<img src="img/knitr.svg" alt="hex-rmarkdown" height="200" width="200"></a>
+<img src="img/knitr.svg" alt="hex-rmarkdown" height="300" width="300"></a>
 <a href="https://shiny.rstudio.com/" class="imagelink">
-<img src="img/shiny.svg" alt="hex-rmarkdown" height="200" width="200"></a>
+<img src="img/shiny.svg" alt="hex-rmarkdown" height="300" width="300"></a>
 
 ---
 
@@ -54,7 +61,6 @@ A bit more,
 Not programmer, inclusive and empowering culture
 -->
 
-
 ---
 
 <!--
@@ -63,14 +69,14 @@ some code: produce results
 Plus we need a header
 -->
 
-a header
+a header *(metadata)*
 
 ```{yaml, eval = FALSE}
 title: "An rmarkdown report"
 author: "Otho Mantegazza"
 ```
 
-some text
+some text *(explain results)*
 
 ```{markdown, eval = FALSE}
 # An example of rmarkdown
@@ -78,12 +84,22 @@ some text
 Below you'll find a very basic plot
 ```
 
-some code
+some code *(produce results)*
 
 ```{r, eval = FALSE}
 plot(mtcars$mpg, mtcars$hp)
 ```
   
+<!--
+knitr and rmarkdown allow putting together this elements
+- in style
+- reproducible
+- versatile, extended
+- concept is very simple, useful in everyday work
+-->  
+
+
+
 ---
 
 ## How?
@@ -108,6 +124,15 @@ Explain our results and the reasoning behind them.
 </div>
 
 <!--
+Not limited to R
+Not limited to markdown
+
+But best developed for these,
+plus, markdown goes natively to html, which is a plus
+-->  
+
+
+<!--
 
 One plain text file 
 
@@ -123,6 +148,11 @@ Basic: literate programming
 ---
 
 ## Markdown
+
+
+<!--
+A markup language that is asy to read
+-->  
 
 ```{markdown, eval = FALSE}
 # This is a header
@@ -159,13 +189,18 @@ decencies is parceled out unequally at birth.
 
 ![](path/to/image)
 ```
----
+
+<!--
+I'll try to give ideas and examples,
+details are in the lins and resources
+-->
+
 
 ## Markdown - Resources
 
-- [First version](https://daringfireball.net/projects/markdown/syntax) at Daring Fireball
-- [Basic Markdown](https://rmarkdown.rstudio.com/authoring_basics.html) at Rstudio
-- [Pandoc](https://pandoc.org/) - A universal document converter
+- `r emo::ji("closed_book")` [First version](https://daringfireball.net/projects/markdown/syntax) at Daring Fireball
+- `r emo::ji("orange_book")` [Basic Markdown](https://rmarkdown.rstudio.com/authoring_basics.html) at Rstudio
+- `r emo::ji("green_book")` [Pandoc](https://pandoc.org/) - A universal document converter
 
 <!--
 While talking I'll try to provide ideas,
@@ -174,51 +209,50 @@ that explains technical sides in detail
 slides are available online
 -->
 
-# Let's Try One!
+</section>
+
+<!-- vertical slides: Rmarkdown basic -->
+
+<section><section>
+
+<h2>Let's Try Some</h2>
 
 ![](/home/otho/Desktop/rladies/slides/img/open-file.png)
 
-## 
+<!--
+Let's go directly to it
+simple concept that comes in many flavours with many details
+-->
 
-*these are my notes for the practical session*
+</section>
+<section>
 
 In the rmarkdown file: 
 
 - [YAML](https://yaml.org/) header with metadata.
-- Markdown text: highlights with *, paragraph with empty line
+- Markdown text: check the styling options
 - code is knitted in text with ````{language}`
 - many options for code, also inline
 
-##
+`r emo::ji("sunflower")``r emo::ji("sun_with_face")` Check the [`examples/rmarkdown`](https://github.com/othomantegazza/talk-rladies/tree/master/examples/rmarkdown) folder to see how to style the output `r emo::ji("sun_with_face")``r emo::ji("sunflower")`
 
-*these are my notes for the practical session*
+</section></section>
 
-Output: 
+<!-- vertical slides: SLIDES -->
 
-- docx
-  - with template
-- html
-  - style with css?
-- parametrized?
+<section><section>
 
-Example: [An article from my blog](https://otho.netlify.com/post/rice-geographic-italy/),
-with interactive [choropleth maps](https://en.wikipedia.org/wiki/Choropleth_map) in a [leaflet app](https://rstudio.github.io/leaflet/)
-
-
-
-# Slides
+<h2>Slides</h2>
 
 <!--
 Slides with R codes
 Example, these slides
 -->
-
-## 
-
-For example, these slides, you can find the source code [here]()
+ 
+These slides are made with Rmarkdown and [revealjs](https://revealjs.com/#/), you can find the [source code here](https://github.com/othomantegazza/talk-rladies/tree/master/examples/slides)
 
 </section>
-<section class="slide level2">
+<section>
 
 R code is evaluated:
 
@@ -226,10 +260,12 @@ R code is evaluated:
 summary(1:10)
 ```
 
-## 
+</section>
+<section>
+
+You can include maps `r emo::ji("earth_africa")`. 
 
 ```{r, message = FALSE}
-# From https://rstudio.github.io/leaflet/
 library(leaflet)
 library(tidyverse)
 
@@ -239,21 +275,40 @@ m <- leaflet() %>%
   addMarkers(lng=174.768, lat=-36.852, popup="The birthplace of R")
 ```  
 
-##
+`r emo::ji("leaves")``r emo::ji("fallen_leaf")`This example is from [the leaflet package](https://rstudio.github.io/leaflet/).`r emo::ji("maple_leaf")``r emo::ji("four_leaf_clover")` <br> 
+`r emo::ji("arrow_down")` The output is below. `r emo::ji("arrow_down")`
+
+</section>
+<section>
   
 ```{r, echo = FALSE, out.width=1000}
 m  # Print the map
 ```
 
-#
+</section></section>
 
 ## More Books, Blogs, dashboards?
 
 
 <a href="https://bookdown.org/" class="imagelink">
-<img src="img/bookdown.svg" alt="hex-rmarkdown" height="200" width="200"></a>
+<img src="img/bookdown.svg" alt="hex-rmarkdown" height="300" width="300"></a>
 <a href="https://alison.rbind.io/post/up-and-running-with-blogdown/" class="imagelink">
-<img src="img/blogdown.svg" alt="hex-rmarkdown" height="200" width="200"></a>
+<img src="img/blogdown.svg" alt="hex-rmarkdown" height="300" width="300"></a>
+
+## Resources
+
+- `r emo::ji("bookmark")` [The Rmarkdown book](https://bookdown.org/yihui/rmarkdown/),
+- `r emo::ji("books")` [The Bookdown repository](https://bookdown.org/), with lots of books on R,
+- `r emo::ji("woman_scientist")` The next level? [Parametrized Rmarkdown](https://github.com/jenniferthompson/ParamRmdExample) and [Rmarkdown driven development](https://emilyriederer.netlify.com/post/rmarkdown-driven-development/),
+
+about me:
+
+- `r emo::ji("man_technologist")` [My website](https://otho.netlify.com/), done with blogdown.
+
+## Next, Tidytuesday?
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The <a href="https://twitter.com/R4DScommunity?ref_src=twsrc%5Etfw">@R4DScommunity</a> welcomes you to week 19 of <a href="https://twitter.com/hashtag/TidyTuesday?src=hash&amp;ref_src=twsrc%5Etfw">#TidyTuesday</a>! We&#39;re exploring Global Student-Teacher ratios!!<br><br>📁 <a href="https://t.co/sElb4fcv3u">https://t.co/sElb4fcv3u</a><br>🗞 <a href="https://t.co/nJqEUDyaNm">https://t.co/nJqEUDyaNm</a><a href="https://twitter.com/hashtag/r4ds?src=hash&amp;ref_src=twsrc%5Etfw">#r4ds</a> <a href="https://twitter.com/hashtag/tidyverse?src=hash&amp;ref_src=twsrc%5Etfw">#tidyverse</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/dataviz?src=hash&amp;ref_src=twsrc%5Etfw">#dataviz</a> <a href="https://t.co/O5PZ7kTDiC">pic.twitter.com/O5PZ7kTDiC</a></p>&mdash; Thomas Mock 👨🏼
+💻 (@thomas_mock) <a href="https://twitter.com/thomas_mock/status/1125413017858998272?ref_src=twsrc%5Etfw">May 6, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 
 
