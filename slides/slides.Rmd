@@ -172,7 +172,10 @@ This is another paragraph. Reserving judgments is a matter of infinite hope.
 I am still a little afraid of missing something if I forget that, as my father
 snobbishly suggested, and I snobbishly repeat, a sense of the fundamental
 decencies is parceled out unequally at birth. 
+
+[Source F. S. Fitzgerald](https://en.wikiquote.org/wiki/The_Great_Gatsby)
 ```
+
 
 ## Markdown
 
